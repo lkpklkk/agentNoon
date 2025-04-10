@@ -1,0 +1,9 @@
+employeeId,name,managerId,salary
+1,boss,,20000
+2,sr le,1,20000
+3,sr luo,1,20000
+4,mid le,2,20000
+5,mid lul,2,20000
+6,mid asd,2,20000
+7,mid some,2,20000
+8,Junior,7,20000
