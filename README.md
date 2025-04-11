@@ -1,5 +1,30 @@
-# Vue 3 + Vite
+# AgentNoon
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+AgentNoon is a Vue 3 application that visualizes hierarchical data using D3.js and Tailwind CSS. It includes features like interactive panning, zooming, and dynamic data visualization.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Features
+
+- Vue 3: A modern JavaScript framework for building user interfaces.
+- D3.js: For parsing hierachycal data.
+- Tailwind CSS: A utility-first CSS framework for styling.
+- Vite: A fast build tool for modern web development.
+
+## Installation
+
+```
+npm install
+```
+
+## Usage
+
+```
+npm run dev
+```
+
+The application will be available at http://localhost:5173.
+
+## Navigation
+
+- **zoom:** Alt + mouse wheel
+
+- **pan:** mouse drag/mouse wheel

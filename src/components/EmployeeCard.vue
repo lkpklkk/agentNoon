@@ -196,6 +196,7 @@ watch(expanded, (newVal) => {
 });
 
 onMounted(() => {
+  // wait for animation to finish
   const redrawLines = () => {
     setTimeout(() => {
       updateChildRefs();
