@@ -28,3 +28,7 @@ The application will be available at http://localhost:5173.
 - **zoom:** Alt + mouse wheel
 
 - **pan:** mouse drag/mouse wheel
+
+## Theme
+
+Use the toggle switch (top left) to toggle between dark mode and light mode
