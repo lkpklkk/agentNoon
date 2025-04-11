@@ -173,24 +173,26 @@ function toggleTheme() {
         <EmployeeCard v-if="root" :node="root" />
       </div>
     </div>
-    <div class="w-full h-1/12 flex justify-left items-center mt-7 pl-10 pt-10">
+    <div
+      class="w-full h-1/12 flex justify-left items-center mt-2 pl-5 pt-5 md:pl-10 md:pt-10 md:mt-7"
+    >
       <div
-        class="rounded-full glass-header w-80 h-20 flex justify-center items-center flex-nowrap"
+        class="rounded-full glass-header w-50 md:w-80 h-12 md:h-20 flex justify-center items-center flex-nowrap"
       >
         <img
           src="./assets/agentnoon.png"
           alt="Agent Noon"
-          class="animate-pulse w-40 ml-7 mr-7"
+          class="animate-pulse w-20 md:w-40 ml-7 mr-7"
         />
         <div class="h-full flex justify-center items-center">
           <button
             @click="toggleTheme"
-            class="relative inline-flex h-8 w-16 items-center rounded-full bg-gray-300 dark:bg-neutral-700 transition-colors duration-300 focus:outline-none"
+            class="relative inline-flex h-5 md:h-8 w-10 md:w-16 items-center rounded-full bg-gray-300 dark:bg-neutral-700 transition-colors duration-300 focus:outline-none"
           >
             <span
               :class="[
-                'absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition-transform duration-300',
-                isDark ? 'translate-x-8' : 'translate-x-0',
+                'absolute left-1 top-1 h-3 w-3 md:h-6 md:w-6 rounded-full bg-white transition-transform duration-300',
+                isDark ? 'translate-x-5 md:translate-x-8' : 'translate-x-0',
               ]"
             />
           </button>
@@ -202,12 +204,11 @@ function toggleTheme() {
 
 <style>
 .glass-header {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for the glass effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  z-index: 10; /* Ensure it stays on top */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .bg-dotted {
   @apply bg-[#f9f9f9] bg-[radial-gradient(#ccc_1px,transparent_1px)] bg-[length:20px_20px];
